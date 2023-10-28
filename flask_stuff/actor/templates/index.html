@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block title %}
+Megathon 2023 | Qualcomm Problem Statement
+{% endblock %}
+
+
+{% block content %}
+
+<!--
+	TIPS about using Bootstrap-Flask:
+	https://github.com/helloflask/bootstrap-flask
+	https://bootstrap-flask.readthedocs.io/
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+
+      <h1 class="pt-5 pb-2" style="font-size: 38px;">Megathon 2023 | Qualcomm Problem Statement</h1>
+
+      <p class="lead">Hello! We're here to help! Ask us any question you have, and we will try our best to assist you.</p>
+
+      {{ render_form(form) }}
+
+      <p class="pt-5"><strong>{{ message }}</strong></p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
