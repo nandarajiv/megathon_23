@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Query: {{ name }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 ps-md-5">
+
+      <!-- note, the id is not used in the template -->
+
+      <br><br>
+      <p>Your Query: {{ name }}</p>
+
+      <p><a href="{{ url_for('index') }}">Return to search page</a></p>
+
+	  <!--
+	      notice how the URL in the link above is rendered for
+	      Flask - it needs to name the FUNCTION, not the route
+      -->
+
+	  <!-- <p>Images are from <a href="https://placebear.com/">placebear</a>.</p> -->
+
+	  <p><h1>You are important, your life is worth living. <br> Help is available. Speak with someone today. <br><br> Call: 9152987821</p></h1>
+
+    </div>
+    <div class="col-md-6">
+
+      <img src="{{ photo }}" alt="Photo: {{ name }}" class="img-fluid pt-5">
+
+      <!-- <p><em>Above: {{ name }}</em></p> -->
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
