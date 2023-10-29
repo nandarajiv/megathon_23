@@ -42,7 +42,7 @@ def index():
             # redirect the browser to another route and template
             return redirect( url_for('ans', id=id) )
         else:
-            message = "That query is not in our database."
+            message = "Sorry, we cannot process your query " + name + " right now. Please try again later. We recommend consulting a medical professional if you are in need of immediate assistance."
     return render_template('index.html', names=names, form=form, message=message)
 
 @app.route('/answer/<id>')

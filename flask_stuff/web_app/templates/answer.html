@@ -13,7 +13,8 @@ Query: {{ name }}
 
       <!-- note, the id is not used in the template -->
 
-      <h1 class="pt-5 pb-2">{{ name }}</h1>
+      <br><br>
+      <p>Your Query: {{ name }}</p>
 
       <p><a href="{{ url_for('index') }}">Return to search page</a></p>
 
@@ -22,16 +23,16 @@ Query: {{ name }}
 	      Flask - it needs to name the FUNCTION, not the route
       -->
 
-	  <p>Images are from <a href="https://placebear.com/">placebear</a>.</p>
+	  <!-- <p>Images are from <a href="https://placebear.com/">placebear</a>.</p> -->
 
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mi ut lorem porta porttitor. Nullam vestibulum nulla quis ligula lobortis, sed commodo dolor lobortis. Cras accumsan justo quis sem dictum ultricies. Pellentesque placerat, dolor vitae fringilla pretium, orci dolor convallis odio, vitae cursus nibh sapien sit amet enim. Mauris imperdiet hendrerit risus, quis congue justo molestie in. Sed et lobortis nunc, sed rutrum nibh.</p>
+	  <p><h1>You are important, your life is worth living. <br> Help is available. Speak with someone today. <br><br> Call: 9152987821</p></h1>
 
     </div>
     <div class="col-md-6">
 
       <img src="{{ photo }}" alt="Photo: {{ name }}" class="img-fluid pt-5">
 
-      <p><em>Above: {{ name }}</em></p>
+      <!-- <p><em>Above: {{ name }}</em></p> -->
 
     </div>
   </div>
